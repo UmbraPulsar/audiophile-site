@@ -1,10 +1,12 @@
 import Head from 'next/head';
 import Header from '../containers/Header';
 import Hero from '../containers/Hero';
-import { ButtonOne2, ButtonTwo } from '../components/Buttons';
-import CategoryButton from '../components/CategoryButton';
 import Zx9SpeakerCard from '../containers/Zx9SpeakerCard';
 import Zx7SpeakerCard from '../containers/Zx7SpeakerCard';
+import Yx1EarphonesCard from '../containers/Yx1EarphonesCard';
+import CategorySelection from '../containers/CategorySelection';
+import BestEquipment from '../containers/BestEquipment';
+import Footer from '../containers/Footer';
 
 export default function Home() {
 	return (
@@ -19,30 +21,14 @@ export default function Home() {
 			</Head>
 			<Header />
 			<Hero />
-			<div className='px-6 pt-8'>
-				<CategoryButton product='headphones' />
-				<CategoryButton product='speakers' />
-				<CategoryButton product='earphones' />
-			</div>
-			<div className='mt-[7.5rem] px-6'>
+			<CategorySelection />
+			<div className='mt-[7.5rem] px-6 md:px-12'>
 				<Zx9SpeakerCard />
 				<Zx7SpeakerCard />
-				<div className='mt-6 '>
-					<img
-						className='rounded-[8px]'
-						src='./home/mobile/image-earphones-yx1.jpg'
-						alt=''
-					/>
-				</div>
-				<div className=' flex items-center mt-6 p-6 min-h-[200px] rounded-[8px] bg-Gray'>
-					<div>
-						<h2 className=' mb-6 text-[1.75rem] leading-[40px] tracking-[2px] font-bold'>
-							YX1 EARPHONES
-						</h2>
-						<ButtonTwo text='see Product' />
-					</div>
-				</div>
+				<Yx1EarphonesCard />
 			</div>
+			<BestEquipment />
+			<Footer />
 		</div>
 	);
 }

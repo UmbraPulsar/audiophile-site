@@ -15,3 +15,11 @@ export const MenuToggleIcon = () => {
 export const CartIcon = () => {
 	return <img src='./shared/desktop/icon-cart.svg' alt='' />;
 };
+
+export const Logo = () => {
+	return <img src='/shared/desktop/logo.svg' alt='' />;
+};
+
+export const SocialIcon = ({ social }) => {
+	return <img src={`/shared/desktop/icon-${social}.svg`} alt='' />;
+};
