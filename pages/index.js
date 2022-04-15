@@ -22,7 +22,7 @@ export default function Home() {
 			<Header />
 			<Hero />
 			<CategorySelection />
-			<div className='mt-[7.5rem] px-6 md:px-12'>
+			<div className='p-6'>
 				<Zx9SpeakerCard />
 				<Zx7SpeakerCard />
 				<Yx1EarphonesCard />

@@ -3,21 +3,24 @@ import React from 'react';
 function BestEquipment() {
 	return (
 		<>
-			<div className='mt-[7.5rem] px-6 text-center'>
+			<div className='my-[120px]  lg:my-52 px-6 md:px-10 lg:px-[10.3125rem] lg:flex lg:items-center lg:justify-between'>
 				<img
-					className='rounded-[8px]'
-					srcSet='./shared/mobile/image-best-gear.jpg 375w,
-							./shared/tablet/image-best-gear.jpg 810w,
-							./shared/desktop/image-best-gear.jpg 1000w'
+					className='rounded-[8px] lg:order-2'
+					srcSet='./shared/mobile/image-best-gear.jpg 475w,
+							./shared/tablet/image-best-gear.jpg 900w,
+							./shared/desktop/image-best-gear.jpg 1400w'
 					alt=''
+					src='./shared/mobile/image-best-gear-.jpg'
 				/>
-				<div className='md:px-24'>
-					<h2 className='mt-[40px] mb-8 uppercase text-[1.75rem] md:text-[2.5rem] leading-[40px] tracking-[2px] font-bold'>
-						Bringing you the{' '}
-						<span className='text-Orange'>best </span>
+
+				<div className='lg:max-w-[27rem] mt-10 md:px-[4.5625rem] lg:px-0 text-center lg:text-left lg:order-1'>
+					<h2 className=' text-[1.75rem] md:text-[2.5rem]'>
+						Bringing you the
+						<span className='text-Orange'> best </span>
+						<br className='hidden md:block lg:hidden' />
 						audio gear
 					</h2>
-					<p className='px-4 text-black/50 leading-[25px]'>
+					<p className='mt-8 text-black/50'>
 						Located at the heart of New York City, Audiophile is the
 						premier store for high end headphones, earphones,
 						speakers, and audio accessories. We have a large

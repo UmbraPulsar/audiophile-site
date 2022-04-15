@@ -17,7 +17,13 @@ export const CartIcon = () => {
 };
 
 export const Logo = () => {
-	return <img src='/shared/desktop/logo.svg' alt='' />;
+	return (
+		<img
+			className='lg:max-w-[8.9375rem] lg:max-h-[25px]'
+			src='/shared/desktop/logo.svg'
+			alt=''
+		/>
+	);
 };
 
 export const SocialIcon = ({ social }) => {
