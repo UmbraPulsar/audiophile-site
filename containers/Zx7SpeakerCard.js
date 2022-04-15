@@ -4,7 +4,7 @@ import { ButtonTwo } from '../components/Buttons';
 function Zx7SpeakerCard() {
 	return (
 		<div
-			className='min-h-[20rem] lg:min-h-[25rem] p-6 md:p-[3.875rem] lg:p-[5.9375rem] flex items-center rounded-[8px]
+			className='min-h-[20rem] lg:min-h-[25rem] mt-6 p-6 md:p-[3.875rem] lg:p-[5.9375rem] flex items-center rounded-[8px]
 		bg-no-repeat
 		bg-center 
 		bg-cover
